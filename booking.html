@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Book a Room — Center Hill Hotel</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .booking-page { padding: 3rem 1.5rem; min-height: 80vh; display:flex; align-items:center; justify-content:center }
+    .booking-card { width: 100%; max-width:720px; background: rgba(6,4,9,0.9); border-radius:16px; padding:2rem; border:1px solid rgba(255,255,255,0.06); }
+    .form-row { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+    label { display:block; font-size:0.85rem; color:var(--text-muted); margin-bottom:0.35rem }
+    input, select { width:100%; padding:0.8rem 1rem; border-radius:10px; border:1px solid rgba(255,255,255,0.06); background:rgba(255,255,255,0.03); color:var(--text) }
+    .submit-row { margin-top:1rem; display:flex; gap:1rem; align-items:center }
+    .note { color:var(--text-muted); margin-top:0.75rem }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">CENTER HILL HOTEL</div>
+      <div style="display:flex;gap:0.75rem;align-items:center">
+        <a href="index.html" class="button">Back</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="booking-page">
+      <div class="booking-card">
+        <h2 style="margin:0 0 0.75rem">Book a Room</h2>
+        <p class="note">Choose a room type and your dates. We'll confirm availability shortly.</p>
+        <form id="bookingForm">
+          <div class="form-row">
+            <div>
+              <label for="name">Full name</label>
+              <input id="name" name="name" required />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+          </div>
+
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem">
+            <div>
+              <label for="arrival">Arrival</label>
+              <input id="arrival" name="arrival" type="date" required />
+            </div>
+            <div>
+              <label for="departure">Departure</label>
+              <input id="departure" name="departure" type="date" required />
+            </div>
+            <div>
+              <label for="guests">Guests</label>
+              <select id="guests" name="guests">
+                <option>1 guest</option>
+                <option selected>2 guests</option>
+                <option>3 guests</option>
+                <option>4 guests</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="margin-top:1rem">
+            <label for="roomType">Room Type</label>
+            <select id="roomType" name="roomType">
+              <option value="studio">Studio Room</option>
+              <option value="executive">Executive Room</option>
+              <option value="standard">Standard Room</option>
+            </select>
+          </div>
+
+          <div class="submit-row">
+            <button type="submit" class="button button-primary">Request Booking</button>
+            <div id="bookingResult" style="color:var(--gold);font-weight:700"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById('bookingForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const room = document.getElementById('roomType').value;
+      const result = document.getElementById('bookingResult');
+      result.textContent = 'Thanks, ' + name.split(' ')[0] + '! Booking request sent for ' + room.replace(/^[a-z]/, s=>s.toUpperCase()) + '.';
+      // In production: POST to server or integrate booking API here.
+    });
+  </script>
+</body>
+</html>

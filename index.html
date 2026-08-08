@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CENTER HILL HOTEL</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="logo.png" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+          <img src="logo.png" alt="Logo" class="header-logo">
+        <span class="brand-logo">CENTER HILL HOTEL</span>
+      </div>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#home">HOME</a>
+        <a href="#rooms">ROOMS</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="#events">GROUPS & EVENTS</a>
+        <a href="#food">FOOD & BEVERAGES</a>
+        <a href="#attractions">ATTRACTIONS</a>
+        <a href="#more">MORE</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:+233536832551" class="phone-action" aria-label="Call hotel">
+          <span>📞</span>
+        </a>
+        <a href="booking.html" class="button button-primary">BOOK NOW</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-subtitle">KWADASO, ABURASO'S PREMIER HAVEN</p>
+        <h1>WELCOME TO CENTER HILL HOTEL</h1>
+        <div class="hero-rating" aria-label="4-star hotel rating">
+          <span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+      </div>
+
+      <div class="booking-panel" id="booking">
+        <div class="booking-field">
+          <label for="arrival">Arrival</label>
+          <input type="date" id="arrival" value="2026-09-01" />
+        </div>
+        <div class="booking-field">
+          <label for="departure">Departure</label>
+          <input type="date" id="departure" value="2026-09-05" />
+        </div>
+        <div class="booking-field">
+          <label for="guests">Guests</label>
+          <select id="guests">
+            <option>1 guest</option>
+            <option selected>2 guests</option>
+            <option>3 guests</option>
+            <option>4 guests</option>
+          </select>
+        </div>
+        <a class="button button-secondary" href="booking.html" role="button">BOOK NOW</a>
+      </div>
+    </section>
+
+    <section class="section" id="events">
+      <div class="section-header">
+        <div>
+          <p class="section-label">GROUPS & EVENTS</p>
+          <h2>Conference & Meeting Facilities</h2>
+        </div>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-card large-card">
+          <img src="281543726623236.jpeg" alt="Conference room" />
+        </div>
+        <div class="gallery-card">
+          <img src="bar.jpg" alt="Event bar" />
+        </div>
+        <div class="gallery-card">
+          <img src="unnamed (3).jpeg" alt="Meeting setup" />
+        </div>
+      </div>
+      <div style="margin-top:1rem;color:var(--text-muted)">Flexible layouts for corporate events, trainings, and private functions.</div>
+    </section>
+
+    <section class="section" id="food">
+      <div class="section-header">
+        <div>
+          <p class="section-label">FOOD & BEVERAGES</p>
+          <h2>Dining, Drinks & Bar</h2>
+        </div>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-card"><img src="44543483812565491.jpg" alt="Food item" /></div>
+        <div class="gallery-card"><img src="589267932539484603.jpeg" alt="Bar lounge" /></div>
+        <div class="gallery-card"><img src="Baileys Caramel Salé.jpg" alt="Baileys" /></div>
+        <div class="gallery-card"><img src="bar.jpg" alt="Bar" /></div>
+        <div class="gallery-card"><img src="Delicious pizza.jpg" alt="Pizza" /></div>
+        <div class="gallery-card"><img src="eat.jpg" alt="Dining" /></div>
+        <div class="gallery-card"><img src="Luc Belaire Rare Rose from France.jpg" alt="Luc Belaire" /></div>
+        <div class="gallery-card"><img src="Smoky Chicken, Jollof Rice & Sweet Fried Plantains.jpg" alt="Local dish" /></div>
+        <div class="gallery-card"><img src="unnamed (7).jpeg" alt="Restaurant dining" /></div>
+        <div class="gallery-card"><img src="unnamed (2).jpeg" alt="Food detail" /></div>
+      </div>
+    </section>
+
+    <section class="section" id="attractions">
+      <div class="section-header">
+        <div>
+          <p class="section-label">ATTRACTIONS</p>
+          <h2>Pool & Lounge</h2>
+        </div>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-card"><img src="22 Swimming Pool Designs for Refreshing Outdoor_.jpeg" alt="Swimming pool" /></div>
+        <div class="gallery-card"><img src="30+ Modern Home Bar Ideas With Rustic And Industrial Touches - Terra Purely.jpeg" alt="Bar ideas" /></div>
+        <div class="gallery-card"><img src="Summer pool .jpeg" alt="Outdoor pool" /></div>
+        <div class="gallery-card"><img src="589267932539484603.jpeg" alt="Poolside bar" /></div>
+      </div>
+    </section>
+
+    <section class="intro-section">
+      <div class="intro-text">
+        <p class="small-label">CENTER HILL HOTEL</p>
+        <div class="intro-rating" aria-label="4-star hotel rating">
+          <span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+      </div>
+      <p class="intro-copy">
+        A premier hotel in Kwadaso, Aburaso offering stylish accommodation, modern facilities, exceptional dining, and authentic hospitality.
+      </p>
+    </section>
+
+    <section class="section" id="rooms">
+      <div class="section-header">
+        <div>
+          <p class="section-label">OUR ROOMS</p>
+          <h2>Luxurious rooms designed for comfort</h2>
+        </div>
+        <a href="#gallery" class="section-link">See gallery</a>
+      </div>
+      <div class="room-grid">
+        <article class="room-card"><img src="City View from Room.jpeg" alt="City view room" /><div class="room-card-body"><h3>City View Room</h3></div></article>
+        <article class="room-card"><img src="Luxury hotel room.jpeg" alt="Luxury room" /><div class="room-card-body"><h3>Luxury Room</h3></div></article>
+        <article class="room-card"><img src="My room in Marriot  Hotel in Connecticut .jpeg" alt="Marriott style room" /><div class="room-card-body"><h3>Premium Suite</h3></div></article>
+        <article class="room-card"><img src="room.jpeg" alt="Standard room" /><div class="room-card-body"><h3>Standard Room</h3></div></article>
+        <article class="room-card"><img src="unnamed (1).jpeg" alt="Signature suite" /><div class="room-card-body"><h3>Signature Suite</h3></div></article>
+        <article class="room-card"><img src="unnamed (5).jpeg" alt="Deluxe room" /><div class="room-card-body"><h3>Deluxe Room</h3></div></article>
+        <article class="room-card"><img src="unnamed (6).jpeg" alt="Superior room" /><div class="room-card-body"><h3>Superior Room</h3></div></article>
+        <article class="room-card"><img src="unnamed (10).jpeg" alt="Family room" /><div class="room-card-body"><h3>Family Room</h3></div></article>
+        <article class="room-card"><img src="unnamed.jpeg" alt="Comfort room" /><div class="room-card-body"><h3>Comfort Room</h3></div></article>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="section-header">
+        <div>
+          <p class="section-label">GALLERY</p>
+          <h2>Spaces crafted for memorable stays</h2>
+        </div>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-card large-card">
+          <img src="unnamed (12).jpeg" alt="Hotel entrance and exterior" />
+        </div>
+        <div class="gallery-card">
+          <img src="unnamed (1).jpeg" alt="Luxury suite" />
+        </div>
+        <div class="gallery-card">
+          <img src="unnamed (2).jpeg" alt="Interior corridor" />
+        </div>
+        <div class="gallery-card">
+          <img src="unnamed (3).jpeg" alt="Reception lounge" />
+        </div>
+        <div class="gallery-card">
+          <img src="unnamed (5).jpeg" alt="Guest seating area" />
+        </div>
+        <div class="gallery-card">
+          <img src="unnamed (6).jpeg" alt="Bedroom interior" />
+        </div>
+        <div class="gallery-card">
+          <img src="unnamed (7).jpeg" alt="Dining and lounge area" />
+        </div>
+        <div class="gallery-card">
+          <img src="unnamed (8).jpeg" alt="Elegant hotel interior" />
+        </div>
+        <div class="gallery-card">
+          <img src="unnamed (9).jpeg" alt="Relaxing seating" />
+        </div>
+        <div class="gallery-card">
+          <img src="unnamed (10).jpeg" alt="Hotel feature detail" />
+        </div>
+        <div class="gallery-card">
+          <img src="unnamed (11).jpeg" alt="Comfortable lounge" />
+        </div>
+        <div class="gallery-card">
+          <img src="Luxury hotel room.jpg" alt="Stylish hotel feature" />
+        </div>
+        <div class="gallery-card">
+          <img src="589267932539484603.jpeg" alt="Bar lounge detail" />
+        </div>
+        <div class="gallery-card">
+          <img src="281543726623236.jpeg" alt="Hotel interior feature" />
+        </div>
+        <div class="gallery-card">
+          <img src="22 Swimming Pool Designs for Refreshing Outdoor_.jpeg" alt="Outdoor pool area" />
+        </div>
+        <div class="gallery-card">
+          <img src="30+ Modern Home Bar Ideas With Rustic And Industrial Touches - Terra Purely.jpeg" alt="Beverage lounge" />
+        </div>
+        <div class="gallery-card">
+          <img src="Summer pool .jpeg" alt="Swimming pool area" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="amenities">
+      <div class="section-header">
+        <div>
+          <p class="section-label">AMENITIES</p>
+          <h2>Curated services for every guest</h2>
+        </div>
+      </div>
+      <div class="amenities-grid">
+        <div class="amenity-item">
+          <h3>Fine Dining</h3>
+          <p>Delicious meals prepared with fresh local and international ingredients.</p>
+        </div>
+        <div class="amenity-item">
+          <h3>24/7 Concierge</h3>
+          <p>Seamless service for reservations, travel, and event planning.</p>
+        </div>
+        <div class="amenity-item">
+          <h3>Event Space</h3>
+          <p>Flexible venue options for meetings, celebrations, and corporate gatherings.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-header">
+        <div>
+          <p class="section-label">CONTACT</p>
+          <h2>Book your stay or inquire now</h2>
+        </div>
+      </div>
+      <div class="contact-grid">
+        <div>
+          <h3>Phone Contacts</h3>
+          <p><a href="tel:+233536832551">0536832551</a></p>
+          <p><a href="tel:+233538350545">0538350545</a></p>
+          <h3 style="margin-top:1rem">Address</h3>
+          <p>Center Hill Hotel, M85J+WV, Aburaso Methodist Church Junction, Kumasi</p>
+        </div>
+        <div>
+          <h3>Map</h3>
+          <div style="border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,0.06)">
+            <iframe
+              src="https://www.google.com/maps?q=Center+Hill+Hotel+M85J+WV+Aburaso+Methodist+Church+Junction+Kumasi&output=embed"
+              width="100%"
+              height="220"
+              style="border:0;display:block"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <ul style="color:var(--text-muted);margin:0;padding-left:1.05rem;line-height:1.6">
+            <li>24/7 Security</li>
+            <li>Dedicated swimming pool</li>
+            <li>WiFi Connection</li>
+            <li>Conference room</li>
+            <li>Bar and Restaurant</li>
+            <li>And many more</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <h3>CENTER HILL HOTEL</h3>
+            <p>Kwadaso, Aburaso's premier haven for comfort and relaxation.</p>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#events">Groups & Events</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>Phone: +233 53 683 2551</p>
+            <p>Location: Kwadaso, Aburaso</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Center Hill Hotel. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
