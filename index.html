@@ -10,12 +10,20 @@
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <div class="brand">
+      <div class="brand-wrap">
+        <div class="brand">
           <img src="logo.png" alt="Logo" class="header-logo">
-        <span class="brand-logo">CENTER HILL HOTEL</span>
+          <span class="brand-logo">CENTER HILL HOTEL</span>
+        </div>
+
+        <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
 
-      <nav class="site-nav" aria-label="Primary navigation">
+      <nav id="siteNav" class="site-nav" aria-label="Primary navigation">
         <a href="#home">HOME</a>
         <a href="#rooms">ROOMS</a>
         <a href="#gallery">GALLERY</a>
@@ -98,7 +106,7 @@
       <div class="gallery-grid">
         <div class="gallery-card"><img src="44543483812565491.jpg" alt="Food item" /></div>
         <div class="gallery-card"><img src="589267932539484603.jpeg" alt="Bar lounge" /></div>
-        <div class="gallery-card"><img src="Baileys Caramel Salé.jpg" alt="Baileys" /></div>
+        <div class="gallery-card"><img src="Baileys Caramel Salé.jpg" alt="Baileys" /></div>
         <div class="gallery-card"><img src="bar.jpg" alt="Bar" /></div>
         <div class="gallery-card"><img src="Delicious pizza.jpg" alt="Pizza" /></div>
         <div class="gallery-card"><img src="eat.jpg" alt="Dining" /></div>
@@ -308,5 +316,6 @@
         <p>&copy; 2026 Center Hill Hotel. All rights reserved.</p>
     </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
