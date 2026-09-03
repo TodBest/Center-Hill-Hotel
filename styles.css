@@ -331,7 +331,7 @@ select {
 .room-card img,
 .gallery-card img {
   width: 100%;
-  height: auto;
+  height: 100%;
   aspect-ratio: 4 / 3;
   display: block;
   object-fit: cover;
@@ -472,8 +472,8 @@ select {
 
   .room-card img,
   .gallery-card img {
-    object-fit: contain;
-    background: #151018;
+    object-fit: cover;
+    object-position: center center;
   }
 
   .section-header {
